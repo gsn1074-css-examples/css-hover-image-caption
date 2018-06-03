@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding: 1em;
+  font-family: sans-serif; }
+
+article {
+  width: 50%;
+  margin: 0 auto 0 auto; }
+
+[data-theme] {
+  display: table; }
+
+[data-theme] nav {
+  display: table-cell;
+  width: 50%; }
+
+[data-theme] nav a {
+  display: block;
+  color: #000;
+  border: 1px solid;
+  text-decoration: none;
+  padding: .5em;
+  margin: .25em; }
+
+[data-theme] nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff; }
+
+[data-theme] figure {
+  display: table-cell;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-image: none; }
+
+[data-theme] figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: .25em;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  display: none; }
+
+[data-theme="Page 1"] figure {
+  background-image: url(../img/image1.jpg); }
+
+[data-theme="Page 1"] figcaption:nth-child(1) {
+  display: block; }
+
+[data-theme="Page 2"] figure {
+  background-image: url(../img/image2.jpg); }
+
+[data-theme="Page 2"] figcaption:nth-child(2) {
+  display: block; }
+
+[data-theme="Page 3"] figure {
+  background-image: url(../img/image3.jpg); }
+
+[data-theme="Page 3"] figcaption:nth-child(3) {
+  display: block; }
